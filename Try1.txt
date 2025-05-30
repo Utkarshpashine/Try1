@@ -1,0 +1,7 @@
+This project presents the development of an Autonomous Rover System equipped with advanced navigation and a precision Pick-and-Place Mechanism, designed for participation in the ISRO IRoC-U competition. The rover utilizes a rocker-bogie suspension mechanism for enhanced stability and mobility on uneven terrain, integrated with a 6-degree-of-freedom robotic arm featuring a dual-gripper claw for object manipulation.
+
+The system architecture comprises several key subsystems: a navigation and control unit powered by ROS2, visual odometry and SLAM-based 3D mapping using OAK-D Lite stereo cameras and LiDAR, and a communication interface employing TS832 and NRF24L01 modules for real-time telemetry. The rover is powered by a Li-Po battery system and centrally controlled using an NVIDIA Jetson Nano for high-speed data processing and an Arduino Mega for actuator control.
+
+Autonomous path planning is implemented using the NAV2 stack, and object detection is achieved through OpenCV-based color and shape analysis. The pick-and-place operations are controlled via the MoveIt framework, enabling precise manipulation of identified objects. A comprehensive Emergency Response System is integrated to handle mechanical, sensor, communication, and software failures.
+
+This project combines mechanical innovation, intelligent control systems, and advanced perception algorithms to build a capable and reliable rover platform for arena-based autonomous operations, simulating conditions similar to planetary exploration missions.
