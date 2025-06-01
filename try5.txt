@@ -1,0 +1,22 @@
+#include "SPIFFS.h"
+
+void setup() {
+  Serial.begin(115200);
+  delay(1000);
+
+  Serial.println("🔄 Formatting SPIFFS...");
+
+  if (SPIFFS.begin(true)) {
+    if (SPIFFS.format()) {
+      Serial.println("✅ SPIFFS format complete.");
+    } else {
+      Serial.println("❌ SPIFFS format failed.");
+    }
+  } else {
+    Serial.println("❌ SPIFFS mount failed.");
+  }
+}
+
+void loop() {
+  // Nothing here
+}
